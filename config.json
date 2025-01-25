@@ -1,0 +1,10 @@
+{
+  "envs" : {
+    "DEV" : { },
+    "PROD" : { },
+    "QA" : { }
+  },
+  "keepDataEntitlements" : false,
+  "keepLabelsIntact" : false,
+  "keepUserGroups" : false
+}
