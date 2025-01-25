@@ -1,1 +1,1 @@
-Main-Class: Main.class
+Main-Class: com.mypackage.MyClass
