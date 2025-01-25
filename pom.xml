@@ -62,6 +62,23 @@
                 </exclusion>
             </exclusions>
         </dependency>
+             <build>
+    <plugins>
+        <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-jar-plugin</artifactId>
+            <version>3.2.2</version>
+            <configuration>
+                <archive>
+                    <manifest>
+                        <mainClass>Main</mainClass> <!-- Substitua pelo nome completo da classe principal -->
+                    </manifest>
+                </archive>
+            </configuration>
+        </plugin>
+    </plugins>
+</build>
+
 
         <dependency>
             <groupId>com.google.code.gson</groupId>
