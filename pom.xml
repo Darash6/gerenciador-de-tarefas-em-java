@@ -62,20 +62,6 @@
                 </exclusion>
             </exclusions>
         </dependency>
-             <build>
-    <plugins>
-        <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-surefire-plugin</artifactId>
-                <version>${maven-surefire-plugin.version}</version>
-                <configuration>
-                    <systemPropertyVariables>
-                        <tdd4c.sourceRoot>CalculationLogic/</tdd4c.sourceRoot>
-                    </systemPropertyVariables>
-                </configuration>
-            </plugin>
-        </plugins>
-    </build>
 
         <dependency>
             <groupId>com.google.code.gson</groupId>
@@ -128,7 +114,18 @@
                     </testSources>
                 </configuration>
             </plugin>
-
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>${maven-surefire-plugin.version}</version>
+                <configuration>
+                    <systemPropertyVariables>
+                        <tdd4c.sourceRoot>CalculationLogic/</tdd4c.sourceRoot>
+                    </systemPropertyVariables>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
 
     <repositories>
         <repository>
